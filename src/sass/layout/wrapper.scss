@@ -1,0 +1,13 @@
+.wrapper {
+    width: $mobile;
+    @include margin(null auto);
+    border: 2px solid tomato;
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
+
+    @media screen and (min-width: $pc) {
+        width: $pc;
+    }
+}

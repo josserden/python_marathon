@@ -1,0 +1,56 @@
+// https://www.bourbon.io/
+@import '../../../node_modules/bourbon/core/bourbon';
+
+@mixin font-source-sans(
+    $size: false,
+    $colour: false,
+    $weight: false,
+    $lh: false
+) {
+    font-family: $main-font;
+
+    @if $size {
+        font-size: $size;
+    }
+
+    @if $colour {
+        color: $colour;
+    }
+
+    @if $weight {
+        font-weight: $weight;
+    }
+
+    @if $lh {
+        line-height: $lh;
+    }
+}
+
+@mixin font-source($size: false, $weight: false) {
+    @if $size {
+        font-size: $size;
+    }
+
+    @if $weight {
+        font-weight: $weight;
+    }
+}
+
+@mixin size($width, $height) {
+    @if length($height) ==1 {
+        height: $height;
+        width: $width;
+    } @else {
+        height: $width;
+        width: $width;
+    }
+}
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+@mixin pseudo($display: block, $content: '') {
+    display: $display;
+    content: $content;
+}

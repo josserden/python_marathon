@@ -1,0 +1,24 @@
+@include font-face('Gotham Pro', '../fonts/GothamPro-Light', ('woff')) {
+    font-style: normal;
+    font-weight: 300;
+}
+
+@include font-face('Gotham Pro', '../fonts/GothamPro-LightItalic', ('woff')) {
+    font-style: italic;
+    font-weight: 300;
+}
+
+@include font-face('Gotham Pro', '../fonts/GothamPro-Medium', ('woff')) {
+    font-style: normal;
+    font-weight: 500;
+}
+
+@include font-face('Gotham Pro', '../fonts/GothamPro-MediumItalic', ('woff')) {
+    font-style: italic;
+    font-weight: 500;
+}
+
+@include font-face('Gotham Pro', '../fonts/GothamPro-Bold', ('woff')) {
+    font-style: normal;
+    font-weight: bold;
+}

@@ -1,0 +1,55 @@
+.header {
+    width: 100%;
+    background-color: $main-white;
+    color: $main-blue;
+    padding-top: 48px;
+    text-align-last: left;
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 220px;
+    }
+
+    @media screen and (min-width: $pc) {
+        padding-top: 320px;
+    }
+}
+
+.header__descr {
+    max-width: 215px;
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 12px;
+
+    @media screen and (min-width: $tablet) {
+        max-width: 430px;
+        font-size: 22px;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: $pc) {
+        max-width: 520px;
+        font-size: 27px;
+        margin-bottom: 54px;
+    }
+}
+
+.header__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 42px;
+    font-weight: bold;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 82px;
+        margin-bottom: 50px;
+    }
+
+    @media screen and (min-width: $pc) {
+        font-size: 103px;
+        margin-bottom: 30px;
+    }
+}
+
+.header__subtitle {
+    margin: 0;
+}
