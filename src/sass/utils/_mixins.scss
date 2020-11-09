@@ -1,6 +1,17 @@
 // https://www.bourbon.io/
 @import '../../../node_modules/bourbon/core/bourbon';
 
+%center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%reset {
+    margin: 0;
+    padding: 0;
+}
+
 @mixin font-source-sans(
     $size: false,
     $colour: false,
