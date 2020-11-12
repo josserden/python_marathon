@@ -9,10 +9,8 @@
         image: url('../images/header/mob/header-320.png');
         repeat: no-repeat;
         position: top right;
-        size: 320px 331px;
+        size: cover;
     }
-    width: 320px;
-    height: 331px;
 
     @media screen and (min-device-pixel-ratio: 2),
         screen and (-webkit-min-device-pixel-ratio: 2),
@@ -39,10 +37,7 @@
             image: url('../../images/header/tab/header-768.png');
             repeat: no-repeat;
             position: top right;
-            size: 768px 893px;
         }
-        width: 768px;
-        height: 893px;
 
         @media screen and (min-device-pixel-ratio: 2),
             screen and (-webkit-min-device-pixel-ratio: 2),
@@ -72,10 +67,7 @@
             image: url('../../images/header/pc/header-1680.png');
             repeat: no-repeat;
             position: top right;
-            size: 1672px 1118px;
         }
-        width: 1672px;
-        height: 1118px;
 
         @media screen and (min-device-pixel-ratio: 2),
             screen and (-webkit-min-device-pixel-ratio: 2),
