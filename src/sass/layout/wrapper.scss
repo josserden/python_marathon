@@ -2,14 +2,15 @@
     position: relative;
     @include margin(null auto);
     border: 2px solid tomato;
-    max-width: $pc-wrapper-xl;
+    max-width: 400px;
 
-    // @media screen and (min-width: $tablet) {
-    //     width: $tablet;
-    // }
+    @media screen and (min-width: $tablet) {
+        max-width: 1024px;
+        // width: 100%;
+    }
 
-    // @media screen and (min-width: $pc) {
-    //     max-width: $pc-wrapper-xl;
-    //     width: 100%;
-    // }
+    @media screen and (min-width: $pc) {
+        max-width: $pc-wrapper-xl;
+        // width: 100%;
+    }
 }

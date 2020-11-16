@@ -2,16 +2,17 @@
     width: 100%;
     background-color: $main-white;
     color: $main-blue;
-    padding-top: 42px;
+    padding-top: 40px;
+    padding-bottom: 68px;
     text-align-last: left;
+    background: {
+        repeat: no-repeat;
+        position: top right;
+        size: cover;
+    }
 
     background: {
         image: url('../../images/header/mob/header-320.png');
-        image: url('../../images/header/mob/header-320.webp');
-
-        repeat: no-repeat;
-        position: top right;
-        size: contain;
     }
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -21,7 +22,6 @@
         screen and (min-resolution: 2dppx) {
         background: {
             image: url('../../images/header/mob/header-320@2x.png');
-            image: url('../../images/header/mob/header-320@2x.webp');
         }
     }
 
@@ -31,12 +31,12 @@
         screen and (min-resolution: 288dpi),
         screen and (min-resolution: 3dppx) {
         background-image: url('../../images/header/mob/header-320@3x.png');
-        background-image: url('../../images/header/mob/header-320@3x.webp');
     }
 
     // 768px
     @media screen and (min-width: $tablet) {
-        padding-top: 220px;
+        padding-top: 210px;
+        padding-bottom: 154px;
         background: {
             image: url('../../images/header/tab/header-768.png');
         }
@@ -64,7 +64,8 @@
 
     // 1680px
     @media screen and (min-width: $pc) {
-        padding-top: 320px;
+        padding-top: 280px;
+        padding-bottom: 216px;
         background: {
             image: url('../../images/header/pc/header-1680.png');
         }
@@ -105,8 +106,8 @@
 
     @media screen and (min-width: $pc) {
         max-width: 520px;
-        font-size: 27px;
-        margin-bottom: 38px;
+        font-size: 26px;
+        margin-bottom: 26px;
     }
 }
 
@@ -124,7 +125,7 @@
     }
 
     @media screen and (min-width: $pc) {
-        font-size: 103px;
+        font-size: 100px;
         margin-bottom: 5px;
     }
 }
@@ -143,6 +144,6 @@
     @media screen and (min-width: $pc) {
         max-width: 670px;
         font-size: 27px;
-        margin-bottom: 86px;
+        margin-bottom: 80px;
     }
 }
