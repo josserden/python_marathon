@@ -1,0 +1,113 @@
+.benefice {
+    @include padding(65px null 50px null);
+    background: {
+        position: center -75px;
+        repeat: no-repeat;
+        size: 768px 908px;
+        image: url('../images/benefice/tab/bg-768@1x-min.png');
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background: {
+            image: url('../images/benefice/tab/bg-768@2x-min.png');
+        }
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+        screen and (-webkit-min-device-pixel-ratio: 3),
+        screen and (-o-min-device-pixel-ratio: 3/1),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+        background: {
+            image: url('../images/benefice/tab/bg-768@3x-min.png');
+        }
+    }
+
+    // 768
+    @media screen and (min-width: $tablet) {
+        @include padding(75px null 100px null);
+        background: {
+            position: center -60px;
+            size: 1440px 908px;
+            image: url('../../images/benefice/pc/bg-1680-min.png');
+        }
+    }
+
+    // 1440
+    @media screen and (min-width: $pc) {
+        @include padding(192px null 194px null);
+        background-size: 1674px 1180px;
+    }
+}
+
+.benefice__title {
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 52px;
+    }
+
+    @media screen and (min-width: $pc) {
+        margin-bottom: 90px;
+    }
+}
+
+.benefice__list {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        margin: -15px;
+    }
+
+    @media screen and (min-width: $pc) {
+        margin: -30px;
+    }
+}
+.benefice__item {
+    @extend %center;
+
+    @media screen and (min-width: $tablet) {
+        flex-direction: column;
+        margin: 15px;
+        flex-basis: calc((100% - 4 * 15px) / 2);
+    }
+
+    @media screen and (min-width: $pc) {
+        flex-basis: calc((100% - 6 * 30px) / 3);
+        margin: 30px;
+    }
+
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+    }
+}
+.benefice__img {
+    @include size(95px, 95px);
+    background-color: #fff0ed;
+    border-radius: 50%;
+}
+.benefice__descr {
+    @extend %reset;
+    @include font-source-sans(12px, $benefice-color, null, null);
+
+    @media screen and (min-width: $tablet) {
+        font-size: 16px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    @media screen and (min-width: $pc) {
+        font-size: 27px;
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-left: 30px;
+    }
+}

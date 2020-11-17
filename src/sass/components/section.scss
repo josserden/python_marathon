@@ -1,4 +1,23 @@
 .section {
     width: 100%;
     position: relative;
+
+    &__clr {
+        background-color: $accent-bg-clr;
+    }
+}
+
+.section__title {
+    @extend %reset;
+    @include font-source-sans(24px, $main-blue, $weight-bold, null);
+    text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 47px;
+    }
+
+    @media screen and (min-width: $pc) {
+        font-size: 55px;
+    }
 }
