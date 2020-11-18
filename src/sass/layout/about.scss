@@ -1,3 +1,65 @@
+.about {
+    background: {
+        position: center top 254px;
+        repeat: no-repeat;
+        size: contain;
+        image: url('../images/about/tab/bg-768-min.png');
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background: {
+            image: url('../images/about/tab/bg-768@2x-min.png');
+        }
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+        screen and (-webkit-min-device-pixel-ratio: 3),
+        screen and (-o-min-device-pixel-ratio: 3/1),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+        background-image: url('../images/about/tab/bg-768@3x-min.png');
+    }
+
+    // 768px
+    @media screen and (min-width: $tablet) {
+        background: {
+            image: url('../../images/about/pc/bg-1680-min.png');
+            position: center;
+        }
+
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (-webkit-min-device-pixel-ratio: 2),
+            screen and (-o-min-device-pixel-ratio: 2/1),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background: {
+                image: url('../images/about/pc/bg-1680@2x-min.png');
+            }
+        }
+
+        @media screen and (min-device-pixel-ratio: 3),
+            screen and (-webkit-min-device-pixel-ratio: 3),
+            screen and (-o-min-device-pixel-ratio: 3/1),
+            screen and (min-resolution: 288dpi),
+            screen and (min-resolution: 3dppx) {
+            background-image: url('../images/about/pc/bg-1680@3x-min.png');
+        }
+    }
+
+    // 1140px
+    @media screen and (min-width: $pc) {
+        background: {
+            image: url('../../images/about/pc/bg-1680-min.png');
+            size: 100%;
+            position: center top 650px;
+        }
+    }
+}
+
 .about__box {
     margin-bottom: 24px;
 
@@ -188,13 +250,16 @@
 .about__item-subtitle {
     @extend %reset;
     @include font-source-sans(11px, $benefice-color, $weight-black, null);
+    margin-bottom: 5px;
 
     @media screen and (min-width: $tablet) {
         font-size: 14px;
+        margin-bottom: 8px;
     }
 
     @media screen and (min-width: $pc) {
         font-size: 22px;
+        margin-bottom: 12px;
     }
 }
 
