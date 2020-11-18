@@ -1,0 +1,220 @@
+.about__box {
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $tablet) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 38px;
+    }
+
+    @media screen and (min-width: $pc) {
+        margin-bottom: 95px;
+    }
+}
+
+.about__content {
+    @media screen and (min-width: $tablet) {
+        flex-basis: 50%;
+        margin-right: 30px;
+    }
+
+    @media screen and (min-width: $pc) {
+        margin-right: 80px;
+    }
+}
+
+.about__content-img {
+    width: 130px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $tablet) {
+        width: 175px;
+        margin-bottom: 44px;
+    }
+
+    @media screen and (min-width: $pc) {
+        width: 280px;
+        margin-bottom: 68px;
+    }
+}
+
+.about__content-title {
+    @extend %reset;
+    @include font-source-sans(19px, $main-blue, $weight-medium, null);
+    margin-bottom: 18px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 27px;
+        margin-bottom: 26px;
+    }
+
+    @media screen and (min-width: $pc) {
+        font-size: 44px;
+        margin-bottom: 44px;
+    }
+}
+
+.about__content-descr {
+    @extend %reset;
+    @include font-source-sans(14px, $benefice-color, $weight-medium, null);
+
+    @media screen and (min-width: $tablet) {
+        font-size: 20px;
+    }
+
+    @media screen and (min-width: $pc) {
+        font-size: 32px;
+    }
+}
+
+.about__img {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
+        display: block;
+        width: 380px;
+    }
+
+    @media screen and (min-width: $pc) {
+        width: 615px;
+    }
+}
+
+.about__list {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        margin: -15px;
+    }
+
+    @media screen and (min-width: $pc) {
+        margin: -30px;
+    }
+}
+
+.about__item {
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    background-color: $main-white;
+    filter: $box-shadow;
+
+    @media screen and (min-width: $tablet) {
+        margin: 15px;
+        flex-basis: calc((100% - 4 * 15px) / 2);
+    }
+
+    @media screen and (min-width: $pc) {
+        margin: 30px;
+        flex-basis: calc((100% - 4 * 30px) / 2);
+    }
+
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.about__item-img {
+    width: 100%;
+}
+
+.about__item-content {
+    @include padding(30px 16px 26px 10px);
+
+    @media screen and (min-width: $tablet) {
+        @include padding(38px 20px 30px 12px);
+    }
+
+    @media screen and (min-width: $pc) {
+        @include padding(62px 46px 40px 22px);
+    }
+}
+
+.about__item-title {
+    @extend %reset;
+    @include font-source-sans(16px, $main-blue, $weight-bold, null);
+    margin-bottom: 18px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+
+    @media screen and (min-width: $pc) {
+        font-size: 32px;
+        margin-bottom: 38px;
+    }
+}
+
+.about__item-text {
+    @extend %reset;
+
+    @include font-source-sans(14px, $benefice-color, $weight-medium, null);
+
+    @media screen and (min-width: $tablet) {
+        font-size: 16px;
+    }
+
+    @media screen and (min-width: $pc) {
+        font-size: 27px;
+    }
+}
+
+.content__list {
+    margin-top: 22px;
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 28px;
+    }
+
+    @media screen and (min-width: $pc) {
+        margin-top: 44px;
+    }
+}
+
+.content__item {
+}
+
+.content__item + .content__item {
+    margin-top: 22px;
+
+    @media screen and (min-width: $pc) {
+        margin-top: 36px;
+    }
+}
+
+.about__item-subtitle {
+    @extend %reset;
+    @include font-source-sans(11px, $benefice-color, $weight-black, null);
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: $pc) {
+        font-size: 22px;
+    }
+}
+
+.about__item-descr {
+    @extend %reset;
+    @include font-source-sans(11px, $main-gray, $weight-medium, null);
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: $pc) {
+        font-size: 22px;
+    }
+}
+
+.about__accent-success {
+    color: $success;
+}
+
+.about__accent-fail {
+    color: $fail;
+}

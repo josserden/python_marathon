@@ -31,6 +31,7 @@
     border-radius: 20px;
     @include font-source(12px, $weight-bold);
     color: $main-white;
+    z-index: 1;
 
     @media screen and (min-width: $tablet) {
         @include size(278px, 70px);
@@ -43,6 +44,34 @@
         font-size: 22px;
         border-radius: 45px;
     }
+
+    &::after {
+        @include pseudo;
+        @include position(absolute, 0 null null 0);
+        @include size(100%, 100%);
+        background-image: linear-gradient(to right, #dc2424, #4a569d);
+        z-index: 2;
+        border-radius: 20px;
+        opacity: 0;
+        transition: opacity 0.5s ease-out;
+
+        @media screen and (min-width: $tablet) {
+            border-radius: 35px;
+        }
+
+        @media screen and (min-width: $pc) {
+            border-radius: 45px;
+        }
+    }
+
+    &:hover::after,
+    &:focus::after {
+        opacity: 1;
+    }
+}
+
+.btn-text {
+    z-index: 3;
 }
 
 .btn__box-text {

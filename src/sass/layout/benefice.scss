@@ -29,7 +29,7 @@
 
     // 768
     @media screen and (min-width: $tablet) {
-        @include padding(75px null 100px null);
+        @include padding(75px null 120px null);
         background: {
             position: center -60px;
             size: 1440px 908px;
@@ -39,7 +39,7 @@
 
     // 1440
     @media screen and (min-width: $pc) {
-        @include padding(192px null 194px null);
+        @include padding(192px null 225px null);
         background-size: 1674px 1180px;
     }
 }

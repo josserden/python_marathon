@@ -12,8 +12,13 @@ $weight-black: bold;
 // Colors
 $main-blue: #281a95;
 $main-white: #ffffff;
+$main-gray: #6c6b7d;
 $accent-bg-clr: #edf0fc;
 $benefice-color: #424071;
+$success: #00904e;
+$fail: #a70730;
+$border-color: #d5d4f7;
+$box-shadow: drop-shadow(0px 37px 47.5px #a7a7c3);
 
 // Breakpoints
 $mobile: 320px;
@@ -25,19 +30,3 @@ $mob-wrapper: 290px;
 $tab-wrapper: 750px;
 $pc-wrapper: 1330px;
 $pc-wrapper-xl: 1680px;
-
-/*
-у заголовка font-size: 28px, а line-height: auto
-
-Это значит:
-1) Сначала считаем line-height в пикселях 28*1.2 = 33.6px
-2) Отнимаем line-height от font-size 33.6 - 28 = 5.6px
-3) Делим на два 5.6 / 2 = 2.8 (округляем в большую сторону и получаем 3px)
-у текста ниже font-size: 16px, а line-height: 24px
-
-Это значит:
-1) Отнимаем line-height от font-size 24 - 16 = 8px
-3) Делим на два 8 / 2 = 4px
-
-и теперь что бы узнать +- точный маржин между двумя текстовыми элементами нам надо:
-1) от маржина который мы посчитали вручную отнять 3px и 4px, получится 72px - 3px - 4px = 65px*/
