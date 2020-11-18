@@ -1,0 +1,64 @@
+.sphere {
+    @include padding(36px null null null);
+}
+
+.sphere__title {
+    text-align: center;
+    margin-bottom: 26px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 52px;
+    }
+}
+
+.sphere__list {
+    @include size(100%, null);
+    border-radius: 5px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.sphere__item {
+    @extend %center;
+    @include padding(12px 16px);
+    background-color: $accent-blue;
+
+    &:nth-of-type(2n) {
+        background-color: $accent-violet;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-basis: 33.3333%;
+    }
+}
+
+.sphere__list-img {
+    @include size(40px, null);
+    margin-right: 10px;
+
+    @media screen and (min-width: $tablet) {
+        @include size(50px, null);
+        margin-right: 18px;
+    }
+
+    @media screen and (min-width: $pc) {
+        @include size(75px, null);
+        margin-right: 28px;
+    }
+}
+
+.sphere__list-descr {
+    @extend %reset;
+    @include font-source-sans(14px, $main-white, $weight-black, null);
+    text-transform: uppercase;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: $pc) {
+        font-size: 27px;
+    }
+}

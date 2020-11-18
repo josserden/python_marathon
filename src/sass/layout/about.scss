@@ -102,7 +102,7 @@
     }
 }
 
-.about__content-title {
+.content__title {
     @extend %reset;
     @include font-source-sans(19px, $main-blue, $weight-medium, null);
     margin-bottom: 18px;
