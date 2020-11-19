@@ -3,6 +3,31 @@
 
     @media screen and (min-width: $tablet) {
         @include padding(null null 96px null);
+
+        background-image: url('../images/carrier/pc/bg-1680.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center bottom;
+
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (-webkit-min-device-pixel-ratio: 2),
+            screen and (-o-min-device-pixel-ratio: 2/1),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background: {
+                image: url('../images/carrier/pc/bg-1680@2x-min.png');
+            }
+        }
+
+        @media screen and (min-device-pixel-ratio: 3),
+            screen and (-webkit-min-device-pixel-ratio: 3),
+            screen and (-o-min-device-pixel-ratio: 3/1),
+            screen and (min-resolution: 288dpi),
+            screen and (min-resolution: 3dppx) {
+            background: {
+                image: url('../images/carrier/pc/bg-1680@3x-min.png');
+            }
+        }
     }
 
     @media screen and (min-width: $pc) {
@@ -31,18 +56,19 @@
     position: relative;
     counter-increment: carrier-counter;
     z-index: 2;
-    @include padding(22px 12px);
+    @include padding(26px 12px);
     background-color: $accent-bg-clr;
     border: 1px solid rgb(213, 212, 247);
     border-radius: 5px;
     filter: $box-shadow;
     overflow: hidden;
+    min-height: 367px;
 
     @media screen and (min-width: $tablet) {
         flex-direction: column;
         margin: 5px;
         flex-basis: calc((100% - 6 * 5px) / 3);
-        min-height: 409px;
+        min-height: 416px;
     }
 
     @media screen and (min-width: $pc) {

@@ -27,7 +27,7 @@
     // 768px
     @media screen and (min-width: $tablet) {
         background: {
-            image: url('../../images/about/pc/bg-1680-min.png');
+            image: url('../images/about/pc/bg-1680-min.png');
             position: center;
         }
 
@@ -53,7 +53,7 @@
     // 1140px
     @media screen and (min-width: $pc) {
         background: {
-            image: url('../../images/about/pc/bg-1680-min.png');
+            image: url('../images/about/pc/bg-1680-min.png');
             size: 100%;
             position: center top 650px;
         }

@@ -6,7 +6,7 @@
     width: 100%;
     background-color: rgb(255, 236, 222);
 
-    border-radius: 15px;
+    border-radius: 22px;
 
     @media screen and (min-width: $tablet) {
         max-width: 490px;
@@ -18,14 +18,7 @@
         border-radius: 45px;
     }
 }
-.button {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 4814px;
-    height: 10010px;
-    z-index: 342;
-}
+
 .btn-accent {
     position: relative;
     @extend %center;
@@ -33,10 +26,9 @@
     border: 1px solid #ff9537;
     background-image: linear-gradient(-114deg, #ff9537 0%, #ff8184 100%);
     border-radius: 20px;
-    @include font-source(16px, $weight-bold);
+    @include font-source(14px, $weight-bold);
     color: rgb(66, 64, 113);
     transition: box-shadow 0.5s ease-out, letter-spacing 0.5s ease-out;
-
     z-index: 1;
 
     @media screen and (min-width: $tablet) {
@@ -47,7 +39,7 @@
 
     @media screen and (min-width: $pc) {
         @include size(350px, 90px);
-        font-size: 27px;
+        font-size: 24px;
         border-radius: 45px;
     }
 

@@ -1,7 +1,6 @@
 .container {
     width: $mob-wrapper;
     @include margin(null auto);
-    outline: 2px solid tomato;
 
     @media screen and (min-width: $tablet) {
         width: $tab-wrapper;

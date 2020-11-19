@@ -1,6 +1,5 @@
 .wrapper {
     position: relative;
     @include margin(null auto);
-    border: 2px solid tomato;
     max-width: $pc-wrapper-xl;
 }
