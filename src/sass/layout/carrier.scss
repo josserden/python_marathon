@@ -12,6 +12,7 @@
 
 .carrier__list {
     margin-top: 30px;
+    counter-reset: carrier-counter;
 
     @media screen and (min-width: $tablet) {
         display: flex;
@@ -27,16 +28,21 @@
 }
 
 .carrier__item {
-    @include padding(22px 10px);
+    position: relative;
+    counter-increment: carrier-counter;
+    z-index: 2;
+    @include padding(22px 12px);
     background-color: $accent-bg-clr;
     border: 1px solid rgb(213, 212, 247);
     border-radius: 5px;
+    filter: $box-shadow;
+    overflow: hidden;
 
     @media screen and (min-width: $tablet) {
         flex-direction: column;
         margin: 5px;
         flex-basis: calc((100% - 6 * 5px) / 3);
-        min-height: 360px;
+        min-height: 409px;
     }
 
     @media screen and (min-width: $pc) {
@@ -44,20 +50,86 @@
         margin: 15px;
         min-height: 570px;
     }
+
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        right: -25px;
+        bottom: -50px;
+        content: counter(carrier-counter);
+        @include font-source-sans(270px, #d6e0fc, $weight-black, null);
+        z-index: -1;
+
+        @media screen and (min-width: $tablet) {
+            font-size: 210px;
+        }
+
+        @media screen and (min-width: $pc) {
+            font-size: 330px;
+        }
+    }
 }
 
 .carrier__item-title {
     @extend %reset;
+    @include font-source-sans(24px, $accent-blue, $weight-bold, null);
+    margin-bottom: 26px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 22px;
+        margin-bottom: 22px;
+    }
+
+    @media screen and (min-width: $pc) {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
 }
 
 .carrier__item-text {
     @extend %reset;
+    @include font-source-sans(18px, $benefice-color, $weight-bold, null);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: $pc) {
+        font-size: 22px;
+        margin-bottom: 32px;
+    }
 }
 
 .carrier__item-descr {
     @extend %reset;
+    @include font-source-sans(13px, #4e4d79, $weight-medium, null);
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: $pc) {
+        font-size: 22px;
+    }
 }
 
 .carrier__item-quote {
     @extend %reset;
+    @include font-source-sans(14px, #878787, $weight-light-italic, null);
+    font-style: italic;
+    margin-top: 22px;
+    text-align: right;
+
+    @media screen and (min-width: $pc) {
+        font-size: 18px;
+        margin-top: 50px;
+    }
 }
