@@ -1,12 +1,20 @@
 .sphere {
-    @include padding(36px null null null);
+    @include padding(36px null 50px null);
+
+    @media screen and (min-width: $tablet) {
+        @include padding(78px null 98px null);
+    }
+
+    @media screen and (min-width: $pc) {
+        @include padding(104px null 120px null);
+    }
 }
 
 .sphere__title {
     text-align: center;
     margin-bottom: 26px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         margin-bottom: 52px;
     }
 }
@@ -14,9 +22,15 @@
 .sphere__list {
     @include size(100%, null);
     border-radius: 5px;
+    margin-bottom: 20px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         display: flex;
+        margin-bottom: 38px;
+    }
+
+    @media screen and (min-width: $pc) {
+        margin-bottom: 50px;
     }
 }
 
@@ -29,7 +43,7 @@
         background-color: $accent-violet;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         flex-basis: 33.3333%;
     }
 }
@@ -60,5 +74,11 @@
 
     @media screen and (min-width: $pc) {
         font-size: 27px;
+    }
+}
+
+.sphere .btn__box-accent {
+    @media screen and (min-width: $tablet) {
+        margin-left: auto;
     }
 }
