@@ -95,7 +95,6 @@
 }
 
 .header__descr {
-    font-family: 'GothamProRegular';
     max-width: 215px;
     margin: 0;
     margin-bottom: 18px;
@@ -116,6 +115,7 @@
 
 .header__title {
     @extend %reset;
+    font-family: 'GothamProBlack';
     margin-left: -5px;
     margin-bottom: 5px;
     font-size: 42px;
@@ -134,6 +134,7 @@
 }
 
 .header__subtitle {
+    font-family: 'GothamProBold';
     margin: 0;
     margin-bottom: 24px;
     font-size: 12px;

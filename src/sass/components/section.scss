@@ -8,8 +8,9 @@
 }
 
 .section__title {
+    font-family: 'GothamProBold';
     @extend %reset;
-    @include font-source-sans(24px, $main-blue, $weight-bold, null);
+    @include font-source-sans(24px, $main-blue, null, null);
     text-transform: uppercase;
     text-align: center;
 

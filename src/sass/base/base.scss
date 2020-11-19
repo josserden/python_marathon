@@ -9,7 +9,11 @@ html {
 }
 
 body {
-    font-family: $main-font;
+    font: {
+        family: $main-font;
+        style: normal;
+        weight: normal;
+    }
 }
 
 ul {
@@ -33,4 +37,9 @@ svg {
 .accent-blue {
     color: $accent-blue;
     margin-left: -3px;
+}
+
+.accent-bold {
+    display: block;
+    font-family: 'GothamProBold';
 }

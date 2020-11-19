@@ -103,8 +103,9 @@
 }
 
 .content__title {
+    font-family: 'GothamProLight';
     @extend %reset;
-    @include font-source-sans(19px, $main-blue, $weight-medium, null);
+    @include font-source-sans(19px, $main-blue, null, null);
     margin-bottom: 18px;
 
     @media screen and (min-width: $tablet) {
@@ -120,7 +121,7 @@
 
 .about__content-descr {
     @extend %reset;
-    @include font-source-sans(14px, $benefice-color, $weight-medium, null);
+    @include font-source-sans(14px, $benefice-color, null, null);
 
     @media screen and (min-width: $tablet) {
         font-size: 20px;
@@ -195,8 +196,9 @@
 }
 
 .about__item-title {
+    font-family: 'GothamProBlack';
     @extend %reset;
-    @include font-source-sans(16px, $main-blue, $weight-bold, null);
+    @include font-source-sans(16px, $main-blue, null, null);
     margin-bottom: 18px;
 
     @media screen and (min-width: $tablet) {
@@ -248,8 +250,9 @@
 }
 
 .about__item-subtitle {
+    font-family: 'GothamProBlack';
     @extend %reset;
-    @include font-source-sans(11px, $benefice-color, $weight-black, null);
+    @include font-source-sans(11px, $benefice-color, null, null);
     margin-bottom: 5px;
 
     @media screen and (min-width: $tablet) {
