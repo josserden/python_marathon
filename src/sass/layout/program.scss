@@ -11,6 +11,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+        overflow: hidden;
     }
 }
 
@@ -33,7 +34,6 @@
 
 .program {
     padding-top: 40px;
-    // margin-top: -20px;
 
     @media screen and (min-width: $tablet) {
         padding-top: 60px;
@@ -44,26 +44,17 @@
     }
 }
 
-// .program::before {
-//     @media screen and (min-width: $tablet) {
-//         @include pseudo;
-//         @include size(395px, 620px);
-//         @include position(absolute, 0 0 null null);
-//         background-image: url(../images/program/tab/bg-768.png);
-//         z-index: -1;
-//     }
-// }
-
 .program__content {
-    // position: relative;
     margin-bottom: 32px;
 
     order: 3;
-
     @media screen and (min-width: $tablet) {
         width: 294px;
-
         order: 2;
+    }
+
+    @media screen and (min-width: $pc) {
+        width: 490px;
     }
 }
 
@@ -88,7 +79,7 @@
     }
 
     @media screen and (min-width: $pc) {
-        font-size: 30px;
+        font-size: 28px;
     }
 }
 
@@ -107,7 +98,7 @@
     }
 
     @media screen and (min-width: $pc) {
-        font-size: 24px;
+        font-size: 22px;
     }
 }
 
@@ -126,12 +117,13 @@
     }
 
     @media screen and (min-width: $tablet) {
-        // background-image: url(../images/program/tab/bg-768.png);
-        // background-size: cover;
-        // background-position: bottom right;
         width: 370px;
         order: 3;
         margin-bottom: 42px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 620px;
     }
 }
 
@@ -140,8 +132,14 @@
         @include pseudo;
         @include size(395px, 620px);
         @include position(absolute, null -30px -73px null);
-        background-image: url(../images/program/tab/bg-768.png);
+        background-image: url(../images/program/tab/bg-768-min.png);
         z-index: -1;
+    }
+
+    @media screen and (min-width: $pc) {
+        @include size(680px, 1138px);
+        @include position(absolute, -70px -70px null null);
+        background-image: url(../images/program/pc/bg-1680-min.png);
     }
 }
 
@@ -168,7 +166,8 @@
     }
 
     @media screen and (min-width: $pc) {
-        font-size: 24px;
+        font-size: 22px;
+        width: 540px;
     }
 }
 
@@ -182,7 +181,7 @@
     }
 
     @media screen and (min-width: $pc) {
-        width: 615px;
+        width: 608px;
     }
 }
 
@@ -191,6 +190,11 @@
         font-size: 16px;
         @include size(210px, 60px);
     }
+
+    @media screen and (min-width: $pc) {
+        font-size: 24px;
+        @include size(344px, 92px);
+    }
 }
 
 .program .btn__box-text-accent {
@@ -198,5 +202,11 @@
         width: 150px;
         font-size: 12px;
         right: 0;
+    }
+
+    @media screen and (min-width: $pc) {
+        width: 220px;
+        font-size: 18px;
+        right: 10px;
     }
 }
