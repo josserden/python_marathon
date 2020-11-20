@@ -1,8 +1,8 @@
 .carrier {
-    @include padding(null null 16px null);
+    @include padding(25px null 16px null);
 
     @media screen and (min-width: $tablet) {
-        @include padding(null null 96px null);
+        @include padding(35px null 96px null);
 
         background-image: url('../images/carrier/pc/bg-1680-min.png');
         background-repeat: no-repeat;
@@ -31,7 +31,7 @@
     }
 
     @media screen and (min-width: $pc) {
-        @include padding(null null 212px null);
+        @include padding(50px null 212px null);
     }
 }
 

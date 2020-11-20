@@ -1,10 +1,13 @@
-<section class="section section__clr">
-    <div class="container">
+<section class="section section__clr program">
+    <div class="container flex">
         <h2 class="section__title">ЧТО В ПРОГРАММЕ МАРАФОНА</h2>
         <div class="program__content">
             <ul class="program__list">
                 <li class="program__item">
-                    <h3 class="program__item-title">ДЕНЬ 1. Пятница</h3>
+                    <h3 class="program__item-title">
+                        <span> ДЕНЬ 1. </span>
+                        Пятница
+                    </h3>
                     <ul class="program__item-list">
                         <li class="program__item-item">
                             - Знакомство с синтаксисом языка
@@ -22,7 +25,10 @@
                     </ul>
                 </li>
                 <li class="program__item">
-                    <h3 class="program__item-title">ДЕНЬ 2. СУББОТА</h3>
+                    <h3 class="program__item-title">
+                        <span> ДЕНЬ 2. </span>
+                        СУББОТА
+                    </h3>
                     <ul class="program__item-list">
                         <li class="program__item-item">
                             - Поработаем с массивами
@@ -37,7 +43,10 @@
                     </ul>
                 </li>
                 <li class="program__item">
-                    <h3 class="program__item-title">ДЕНЬ 3. ВОСКРЕСЕНЬЕ</h3>
+                    <h3 class="program__item-title">
+                        <span> ДЕНЬ 3. </span>
+                        ВОСКРЕСЕНЬЕ
+                    </h3>
                     <ul class="program__item-list">
                         <li class="program__item-item">
                             - Запустим свой первый сервер
@@ -51,7 +60,9 @@
                     </ul>
                 </li>
                 <li class="program__item">
-                    <h3 class="program__item-title">БОНУСЫ:</h3>
+                    <h3 class="program__item-title">
+                        <span>БОНУСЫ:</span>
+                    </h3>
                     <ul class="program__item-list">
                         <li class="program__item-item">
                             - Доступ на 3 месяца к приложению по изучению
@@ -70,7 +81,34 @@
             </ul>
         </div>
         <div class="program__info">
-            <img src="" alt="" class="program__img" />
+            <picture>
+                <source
+                    media="(min-width:1440px )"
+                    srcset="
+                        ./images/program/pc/screen-1680-min.png    1x,
+                        ./images/program/pc/screen-1680@2x-min.png 2x,
+                        ./images/program/pc/screen-1680@3x-min.png 3x
+                    "
+                />
+                <source
+                    media="(min-width:768px )"
+                    srcset="
+                        ./images/program/tab/screen-768-min.png    1x,
+                        ./images/program/tab/screen-768@2x-min.png 2x,
+                        ./images/program/tab/screen-768@3x-min.png 3x
+                    "
+                />
+                <img
+                    srcset="
+                        ./images/program/mob/screen-320-min.png    1x,
+                        ./images/program/mob/screen-320@2x-min.png 2x,
+                        ./images/program/mob/screen-320@3x-min.png 3x
+                    "
+                    src="./images/program/mob/screen-320-min.png"
+                    alt="screen monitor"
+                    class="program__img"
+                />
+            </picture>
             <p class="program__descr">
                 Для марафона мы разработали специальный тренажер на Python, в
                 котором вы изучите теорию, получите практические задания и
@@ -80,7 +118,7 @@
                 Выполнив все задания тренажера вы создадите свой первый
                 IT-проект — небольшую CRM-систему.
             </p>
-            //= ./components/btn-accent.html
         </div>
+        //= ./components/btn-accent.html
     </div>
 </section>
