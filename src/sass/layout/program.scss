@@ -132,14 +132,14 @@
         @include pseudo;
         @include size(395px, 620px);
         @include position(absolute, null -30px -73px null);
-        background-image: url(../images/program/tab/bg-768-min.png);
+        background-image: url('../images/program/tab/bg-768-min.png');
         z-index: -1;
     }
 
     @media screen and (min-width: $pc) {
         @include size(680px, 1138px);
         @include position(absolute, -70px -70px null null);
-        background-image: url(../images/program/pc/bg-1680-min.png);
+        background-image: url('../images/program/pc/bg-1680-min.png');
     }
 }
 
