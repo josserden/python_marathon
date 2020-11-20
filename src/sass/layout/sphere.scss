@@ -16,6 +16,7 @@
     margin-right: auto;
     margin-bottom: 26px;
     text-transform: uppercase;
+    max-width: 280px;
 
     @media screen and (min-width: $tablet) {
         max-width: 570px;
@@ -94,7 +95,7 @@
 .sphere__list-descr {
     font-family: 'GothamProBold';
     @extend %reset;
-    @include font-source-sans(14px, $main-white, $weight-black, null);
+    @include font-source-sans(12px, $main-white, $weight-black, null);
     text-transform: uppercase;
 
     @media screen and (min-width: $tablet) {
@@ -107,7 +108,7 @@
 }
 
 .sphere .btn__box-accent {
-    @include size(290px, 44px);
+    @include size(288px, 44px);
     border-radius: 22px;
 
     @media screen and (min-width: $tablet) {
@@ -125,6 +126,7 @@
 
 .sphere .btn-accent {
     @include size(160px, 42px);
+    @include font-source(12px, null);
 
     @media screen and (min-width: $tablet) {
         @include size(274px, 74px);
@@ -138,7 +140,7 @@
 }
 
 .sphere .btn__box-text-accent {
-    font-size: 9px;
+    font-size: 8px;
 
     @media screen and (min-width: $tablet) {
         font-size: 16px;

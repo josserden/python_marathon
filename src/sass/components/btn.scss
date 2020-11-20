@@ -1,9 +1,8 @@
 .btn__box {
     position: relative;
-    width: 270px;
+    width: 258px;
     display: flex;
     align-items: center;
-    width: 100%;
     background-color: rgb(183, 186, 255);
     border-radius: 22px;
 
@@ -83,7 +82,7 @@
 }
 
 .btn__box-text {
-    @include position(absolute, 50% 10px null null);
+    @include position(absolute, 50% -10px null null);
     transform: translateY(-50%);
     @extend %reset;
     width: 100px;
