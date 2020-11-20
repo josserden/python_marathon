@@ -126,7 +126,6 @@
 
 .sphere .btn-accent {
     @include size(160px, 42px);
-    @include font-source(12px, null);
 
     @media screen and (min-width: $tablet) {
         @include size(274px, 74px);
