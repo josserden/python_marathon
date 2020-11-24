@@ -1,12 +1,11 @@
 <section class="section section__clr program">
     <div class="container flex">
-        <h2 class="section__title">ЧТО В ПРОГРАММЕ МАРАФОНА</h2>
+        <h2 class="section__title">Во время игры вас ждёт:</h2>
         <div class="program__content">
             <ul class="program__list">
                 <li class="program__item">
                     <h3 class="program__item-title">
                         <span> ДЕНЬ 1. </span>
-                        Пятница
                     </h3>
                     <ul class="program__item-list">
                         <li class="program__item-item">
@@ -27,7 +26,6 @@
                 <li class="program__item">
                     <h3 class="program__item-title">
                         <span> ДЕНЬ 2. </span>
-                        СУББОТА
                     </h3>
                     <ul class="program__item-list">
                         <li class="program__item-item">
@@ -45,7 +43,6 @@
                 <li class="program__item">
                     <h3 class="program__item-title">
                         <span> ДЕНЬ 3. </span>
-                        ВОСКРЕСЕНЬЕ
                     </h3>
                     <ul class="program__item-list">
                         <li class="program__item-item">
@@ -65,12 +62,13 @@
                     </h3>
                     <ul class="program__item-list">
                         <li class="program__item-item">
-                            - Вы получите видеоинструкцию о построении команд в
-                            IT!
+                            - Обучающие видео "Python-интерпретатор" и "Редактор
+                            кода VSC"
                         </li>
                         <li class="program__item-item">
-                            - Научитесь ставить цели для себя и своего стартапа
-                            – видео от CEO компании GoIT Антона Черного
+                            - А также видеоинструкция о постановке целей для
+                            себя и своего стартапа - методология, которую
+                            используют Google, Linkedin, Oracle и многие другие.
                         </li>
                     </ul>
                 </li>
@@ -81,38 +79,66 @@
                 <source
                     media="(min-width:1440px )"
                     srcset="
-                        ./images/program/pc/screen-1680-min.png    1x,
-                        ./images/program/pc/screen-1680@2x-min.png 2x,
-                        ./images/program/pc/screen-1680@3x-min.png 3x
+                        ./images/program/pc/screen-1680-min.webp    1x,
+                        ./images/program/pc/screen-1680@2x-min.webp 2x,
+                        ./images/program/pc/screen-1680@3x-min.webp 3x
+                    "
+                    type="image/webp"
+                />
+                <source
+                    media="(min-width:768px )"
+                    srcset="
+                        ./images/program/tab/screen-768-min.webp    1x,
+                        ./images/program/tab/screen-768@2x-min.webp 2x,
+                        ./images/program/tab/screen-768@3x-min.webp 3x
+                    "
+                    type="image/webp"
+                />
+                <source
+                    srcset="
+                        ./images/program/mob/screen-320-min.webp    1x,
+                        ./images/program/mob/screen-320@2x-min.webp 2x,
+                        ./images/program/mob/screen-320@3x-min.webp 3x
+                    "
+                    type="image/webp"
+                />
+                <source
+                    media="(min-width:1440px )"
+                    srcset="
+                        ./images/program/pc/screen-1680-min.jpg    1x,
+                        ./images/program/pc/screen-1680@2x-min.jpg 2x,
+                        ./images/program/pc/screen-1680@3x-min.jpg 3x
                     "
                 />
                 <source
                     media="(min-width:768px )"
                     srcset="
-                        ./images/program/tab/screen-768-min.png    1x,
-                        ./images/program/tab/screen-768@2x-min.png 2x,
-                        ./images/program/tab/screen-768@3x-min.png 3x
+                        ./images/program/tab/screen-768-min.jpg    1x,
+                        ./images/program/tab/screen-768@2x-min.jpg 2x,
+                        ./images/program/tab/screen-768@3x-min.jpg 3x
                     "
                 />
                 <img
                     srcset="
-                        ./images/program/mob/screen-320-min.png    1x,
-                        ./images/program/mob/screen-320@2x-min.png 2x,
-                        ./images/program/mob/screen-320@3x-min.png 3x
+                        ./images/program/mob/screen-320-min.jpg    1x,
+                        ./images/program/mob/screen-320@2x-min.jpg 2x,
+                        ./images/program/mob/screen-320@3x-min.jpg 3x
                     "
-                    src="./images/program/mob/screen-320-min.png"
+                    src="./images/program/mob/screen-320-min.jpg"
+                    sizes="(min-width: 1440px) 675px, (min-width: 768px) 371px,  311px"
                     alt="screen monitor"
                     class="program__img"
+                    loading="lazy"
                 />
             </picture>
             <p class="program__descr">
-                Для марафона мы разработали специальный тренажер на Python, в
+                Для игры мы разработали специальный тренажер на Python, в
                 котором вы изучите теорию, получите практические задания и
                 сможете автоматизированно проверить свой код.
             </p>
             <p class="program__descr">
-                Выполнив все задания тренажера вы создадите свой первый
-                IT-проект — небольшую CRM-систему.
+                Выполнив все задания тренажера, вы создадите свой первый
+                IT-проект — <b>небольшую CRM-систему</b>.
             </p>
         </div>
         //= ./components/btn-accent.html

@@ -68,7 +68,7 @@
         flex-direction: column;
         margin: 5px;
         flex-basis: calc((100% - 6 * 5px) / 3);
-        height: 360px;
+        height: 400px;
     }
 
     @media screen and (min-width: $pc) {
@@ -86,7 +86,7 @@
     &::after {
         position: absolute;
         right: -25px;
-        bottom: -50px;
+        bottom: 0;
         content: counter(carrier-counter);
         font-family: 'GothamProBold';
         @include font-source-sans(270px, #d6e0fc, null, null);

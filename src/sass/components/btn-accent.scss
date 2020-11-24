@@ -3,7 +3,6 @@
     width: 270px;
     display: flex;
     align-items: center;
-    width: 100%;
     background-color: rgb(255, 236, 222);
 
     border-radius: 22px;
@@ -53,24 +52,24 @@
 }
 
 .btn__box-text-accent {
-    @include position(absolute, 50% 10px null null);
+    @include position(absolute, 50% 5px null null);
     transform: translateY(-50%);
     @extend %reset;
     width: 100px;
-    font-size: 8px;
+    font-size: 10px;
     color: #424071;
     text-transform: uppercase;
     font-weight: bold;
 
     @media screen and (min-width: $tablet) {
         width: 180px;
-        font-size: 14px;
+        font-size: 16px;
         right: 15px;
     }
 
     @media screen and (min-width: $pc) {
         width: 195px;
-        font-size: 16px;
+        font-size: 20px;
         right: 40px;
     }
 }
