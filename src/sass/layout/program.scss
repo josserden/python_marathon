@@ -5,13 +5,17 @@
     border-radius: 5px;
     background-color: $main-white;
     filter: $box-shadow;
-    padding: 30px 10px;
+    @include padding(30px 0 30px 10px);
 
     @media screen and (min-width: $tablet) {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         overflow: hidden;
+    }
+
+    @media screen and (min-width: $pc) {
+        padding-left: 20px;
     }
 }
 
@@ -41,6 +45,13 @@
     }
     @media screen and (min-width: $pc) {
         padding-top: 80px;
+    }
+}
+
+.program .section__title {
+    @media screen and (min-width: $tablet) {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -110,8 +121,8 @@
     z-index: 2;
 
     @media screen and (max-width: 767px) {
-        background-image: url(../images/program/mob/bg-320.png);
-        background-size: contain;
+        background-image: url('../images/program/mob/bg-320-min.png');
+        background-size: cover;
         background-position: bottom;
         background-repeat: no-repeat;
     }
@@ -137,7 +148,7 @@
     }
 
     @media screen and (min-width: $pc) {
-        @include size(680px, 1138px);
+        @include size(744px, 1138px);
         @include position(absolute, -70px -70px null null);
         background-image: url('../images/program/pc/bg-1680-min.png');
     }
@@ -161,13 +172,13 @@
 
     @media screen and (min-width: $tablet) {
         width: 340px;
-        margin-left: auto;
+        margin-left: 20px;
         font-size: 13px;
     }
 
     @media screen and (min-width: $pc) {
         font-size: 22px;
-        width: 540px;
+        width: 600px;
     }
 }
 
@@ -198,6 +209,8 @@
 }
 
 .program .btn__box-text-accent {
+    right: -4px;
+
     @media screen and (min-width: $tablet) {
         width: 150px;
         font-size: 12px;
