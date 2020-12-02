@@ -1,9 +1,9 @@
 .header {
     width: 100%;
+    min-height: 269px;
     background-color: $main-white;
     color: $main-blue;
     padding-top: 40px;
-    padding-bottom: 18px;
     text-align-last: left;
     background: {
         repeat: no-repeat;
@@ -35,8 +35,9 @@
 
     // 768px
     @media screen and (min-width: $tablet) {
+        min-height: 768px;
         padding-top: 210px;
-        padding-bottom: 154px;
+        // padding-bottom: 154px;
         background: {
             image: url('../images/header/tab/header-768.png');
             size: 768px;
@@ -63,7 +64,7 @@
         }
     }
 
-    // 1440px
+    // 1260px
     @media screen and (min-width: $pc) {
         padding-top: 260px;
         padding-bottom: 130px;
@@ -137,7 +138,7 @@
     font-family: 'GothamProBold';
     margin: 0;
     margin-bottom: 24px;
-    font-size: 12px;
+    font-size: 11px;
 
     @media screen and (min-width: $tablet) {
         max-width: 525px;

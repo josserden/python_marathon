@@ -2,12 +2,17 @@
     width: 100%;
     padding-top: 36px;
     padding-bottom: 284px;
+}
+
+.lazy-background {
     background: {
         repeat: no-repeat;
         position: bottom left;
         size: 630px auto;
     }
+}
 
+.lazy-background.visible {
     background: {
         image: url('../images/footer/pc/bg-1680.png');
     }
@@ -39,7 +44,7 @@
         }
     }
 
-    // 1440px
+    // 1260px
     @media screen and (min-width: $pc) {
         padding-bottom: 600px;
         background: {

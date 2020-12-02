@@ -1,10 +1,10 @@
 .benefice {
-    @include padding(65px null 50px null);
+    @include padding(50px null 50px null);
     background: {
-        position: center -75px;
+        position: center -85px;
         repeat: no-repeat;
-        size: 768px 908px;
-        image: url('../images/benefice/tab/bg-768@1x-min.png');
+        size: 100% 800px;
+        image: url('../images/benefice/mob/bg-320@1x-min.png');
     }
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -13,7 +13,7 @@
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
         background: {
-            image: url('../images/benefice/tab/bg-768@2x-min.png');
+            image: url('../images/benefice/mob/bg-320@2x-min.png');
         }
     }
 
@@ -23,25 +23,45 @@
         screen and (min-resolution: 288dpi),
         screen and (min-resolution: 3dppx) {
         background: {
-            image: url('../images/benefice/tab/bg-768@3x-min.png');
+            image: url('../images/benefice/mob/bg-320@3x-min.png');
         }
     }
 
     // 768
     @media screen and (min-width: $tablet) {
-        @include padding(75px null 120px null);
+        @include padding(110px null 120px null);
         background: {
-            position: center -60px;
-            size: 1440px 908px;
-            image: url('../images/benefice/pc/bg-1680-min.png');
+            position: center -55px;
+            size: 100% 100%;
+            image: url('../images/benefice/tab/bg-768@1x-min.png');
         }
-    }
 
-    // 1440
-    @media screen and (min-width: $pc) {
-        @include padding(192px null 225px null);
-        background-size: 1674px 1200px;
-        background-position: center -30px;
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (-webkit-min-device-pixel-ratio: 2),
+            screen and (-o-min-device-pixel-ratio: 2/1),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background: {
+                image: url('../images/benefice/tab/bg-768@2x-min.png');
+            }
+        }
+
+        @media screen and (min-device-pixel-ratio: 3),
+            screen and (-webkit-min-device-pixel-ratio: 3),
+            screen and (-o-min-device-pixel-ratio: 3/1),
+            screen and (min-resolution: 288dpi),
+            screen and (min-resolution: 3dppx) {
+            background: {
+                image: url('../images/benefice/tab/bg-768@3x-min.png');
+            }
+        }
+
+        // 1260
+        @media screen and (min-width: $pc) {
+            @include padding(192px null 225px null);
+            background-size: 1674px 1200px;
+            background-position: center -30px;
+        }
     }
 }
 
@@ -62,20 +82,21 @@
         display: flex;
         flex-wrap: wrap;
         align-items: baseline;
-        margin: -15px;
+        margin: -30px;
     }
 
     @media screen and (min-width: $pc) {
         margin: -30px;
     }
 }
+
 .benefice__item {
     @extend %center;
 
     @media screen and (min-width: $tablet) {
         flex-direction: column;
-        margin: 15px;
-        flex-basis: calc((100% - 4 * 15px) / 2);
+        margin: 30px;
+        flex-basis: calc((100% - 6 * 30px) / 3);
     }
 
     @media screen and (min-width: $pc) {
@@ -85,23 +106,25 @@
 
     &:not(:last-child) {
         @media screen and (max-width: 767px) {
-            margin-bottom: 20px;
+            margin-bottom: 12px;
         }
     }
 }
+
 .benefice__img {
-    @include size(95px, null);
+    @include size(90px, 90px);
     background-color: #fff0ed;
     border-radius: 50%;
 
     @media screen and (min-width: $tablet) {
-        @include size(100px, null);
+        @include size(100px, 100px);
     }
 
     @media screen and (min-width: $pc) {
         @include size(168px, null);
     }
 }
+
 .benefice__descr {
     @extend %reset;
     @include font-source-sans(12px, $benefice-color, null, null);

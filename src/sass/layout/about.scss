@@ -2,7 +2,7 @@
     background: {
         position: center top 254px;
         repeat: no-repeat;
-        size: contain;
+        size: 320px;
         image: url('../images/about/tab/bg-768-min.png');
     }
 
@@ -29,6 +29,7 @@
         background: {
             image: url('../images/about/pc/bg-1680-min.png');
             position: center;
+            size: 768px;
         }
 
         @media screen and (min-device-pixel-ratio: 2),
@@ -103,7 +104,6 @@
 }
 
 .content__title {
-    font-family: 'GothamProLight';
     @extend %reset;
     @include font-source-sans(19px, $main-blue, null, null);
     margin-bottom: 18px;
@@ -121,7 +121,7 @@
 
 .about__content-descr {
     @extend %reset;
-    @include font-source-sans(14px, $benefice-color, null, null);
+    @include font-source-sans(15px, $benefice-color, null, null);
 
     @media screen and (min-width: $tablet) {
         font-size: 20px;

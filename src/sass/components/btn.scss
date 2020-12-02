@@ -29,8 +29,8 @@
     );
     border-radius: 20px;
     font-family: 'GothamProBold';
-
-    @include font-source(12px, null);
+    text-transform: uppercase;
+    @include font-source(10px, null);
     color: $main-white;
     z-index: 1;
     transition: letter-spacing 0.5s ease-out;
@@ -82,7 +82,7 @@
 }
 
 .btn__box-text {
-    @include position(absolute, 50% -10px null null);
+    @include position(absolute, 50% -5px null null);
     transform: translateY(-50%);
     @extend %reset;
     width: 100px;
@@ -94,7 +94,7 @@
     @media screen and (min-width: $tablet) {
         width: 180px;
         font-size: 14px;
-        right: 15px;
+        right: 0;
     }
 
     @media screen and (min-width: $pc) {
