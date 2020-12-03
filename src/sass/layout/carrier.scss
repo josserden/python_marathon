@@ -2,7 +2,7 @@
     @include padding(null null 16px null);
 
     @media screen and (min-width: $tablet) {
-        @include padding(null null 10px null);
+        @include padding(null null 0 null);
     }
 }
 
@@ -12,14 +12,12 @@
 
 .carrier__list {
     position: relative;
-    // margin-top: 30px;
     counter-reset: carrier-counter;
 
     @media screen and (min-width: $tablet) {
         display: flex;
         align-items: baseline;
         margin: -5px;
-        // margin-top: 46px;
     }
 
     @media screen and (min-width: $pc) {
@@ -31,7 +29,7 @@
 .carrier__list::after {
     @media screen and (min-width: $tablet) {
         content: '';
-        @include position(absolute, null null -100px 50%);
+        @include position(absolute, null null -90px 50%);
         transform: translateX(-50%);
         @include size(748px, 408px);
         z-index: 1;
