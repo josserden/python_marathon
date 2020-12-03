@@ -10,6 +10,7 @@
     @include padding(30px null 30px null);
 
     @media screen and (min-width: $tablet) {
+        padding-top: 50px;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -42,13 +43,16 @@
 .program .section__title {
     width: 260px;
     margin: 0 auto 20px;
+
+    @media screen and (min-width: $tablet) {
+        width: 100%;
+    }
 }
 
 .program {
-    padding-top: 40px;
+    // padding-top: 40px;
 
     @media screen and (min-width: $tablet) {
-        padding-top: 60px;
         margin-top: -20px;
     }
     @media screen and (min-width: $pc) {

@@ -2,7 +2,7 @@
     @include padding(36px null 50px null);
 
     @media screen and (min-width: $tablet) {
-        @include padding(78px null 98px null);
+        @include padding(78px null null null);
     }
 
     @media screen and (min-width: $pc) {
@@ -32,7 +32,7 @@
 .sphere__list {
     @include size(100%, null);
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 38px;
 
     @media screen and (min-width: $tablet) {
         display: flex;
@@ -109,7 +109,7 @@
 }
 
 .sphere .btn__box-accent {
-    @include size(288px, 44px);
+    @include size(288px, null);
     border-radius: 22px;
 
     @media screen and (min-width: $tablet) {

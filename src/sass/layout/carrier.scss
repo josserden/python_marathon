@@ -1,54 +1,43 @@
 .carrier {
-    @include padding(25px null 16px null);
+    @include padding(null null 16px null);
 
     @media screen and (min-width: $tablet) {
-        @include padding(35px null 96px null);
-
-        background-image: url('../images/carrier/pc/bg-1680-min.png');
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center bottom;
-
-        @media screen and (min-device-pixel-ratio: 2),
-            screen and (-webkit-min-device-pixel-ratio: 2),
-            screen and (-o-min-device-pixel-ratio: 2/1),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
-            background: {
-                image: url('../images/carrier/pc/bg-1680@2x-min.png');
-            }
-        }
-
-        @media screen and (min-device-pixel-ratio: 3),
-            screen and (-webkit-min-device-pixel-ratio: 3),
-            screen and (-o-min-device-pixel-ratio: 3/1),
-            screen and (min-resolution: 288dpi),
-            screen and (min-resolution: 3dppx) {
-            background: {
-                image: url('../images/carrier/pc/bg-1680@3x-min.png');
-            }
-        }
-    }
-
-    @media screen and (min-width: $pc) {
-        @include padding(50px null 212px null);
+        @include padding(null null 10px null);
     }
 }
 
+@media screen and (min-width: $pc) {
+    @include padding(50px null 212px null);
+}
+
 .carrier__list {
-    margin-top: 30px;
+    position: relative;
+    // margin-top: 30px;
     counter-reset: carrier-counter;
 
     @media screen and (min-width: $tablet) {
         display: flex;
         align-items: baseline;
         margin: -5px;
-        margin-top: 46px;
+        // margin-top: 46px;
     }
 
     @media screen and (min-width: $pc) {
         margin: -15px;
         margin-top: 60px;
+    }
+}
+
+.carrier__list::after {
+    @media screen and (min-width: $tablet) {
+        content: '';
+        @include position(absolute, null null -100px 50%);
+        transform: translateX(-50%);
+        @include size(748px, 408px);
+        z-index: 1;
+
+        background-image: url('../images/carrier/pc/bg-1680-min.svg');
+        background-repeat: no-repeat;
     }
 }
 
@@ -68,7 +57,7 @@
         flex-direction: column;
         margin: 5px;
         flex-basis: calc((100% - 6 * 5px) / 3);
-        height: 400px;
+        height: 360px;
     }
 
     @media screen and (min-width: $pc) {
@@ -94,6 +83,7 @@
 
         @media screen and (min-width: $tablet) {
             font-size: 210px;
+            right: 0;
         }
 
         @media screen and (min-width: $pc) {
@@ -102,7 +92,9 @@
     }
 
     &:first-of-type::after {
-        right: -25px;
+        @media screen and (max-width: 767px) {
+            right: -25px;
+        }
     }
 }
 
@@ -160,6 +152,10 @@
     @include font-source-sans(14px, #878787, null, null);
     margin-top: 22px;
     text-align: right;
+
+    @media screen and (min-width: $tablet) {
+        @include position(absolute, null 30px 12px null);
+    }
 
     @media screen and (min-width: $pc) {
         font-size: 18px;
