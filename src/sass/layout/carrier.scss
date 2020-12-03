@@ -57,10 +57,10 @@
     counter-increment: carrier-counter;
     z-index: 2;
     @include padding(26px 12px);
-    background-color: $accent-bg-clr;
+    background-color: #edf1fc;
     border: 1px solid rgb(213, 212, 247);
     border-radius: 5px;
-    filter: $box-shadow;
+    box-shadow: $box-shadow;
     overflow: hidden;
     height: 392px;
 
@@ -85,7 +85,7 @@
 
     &::after {
         position: absolute;
-        right: -25px;
+        right: -80px;
         bottom: 0;
         content: counter(carrier-counter);
         font-family: 'GothamProBold';
@@ -99,6 +99,10 @@
         @media screen and (min-width: $pc) {
             font-size: 330px;
         }
+    }
+
+    &:first-of-type::after {
+        right: -25px;
     }
 }
 
@@ -139,10 +143,10 @@
 
 .carrier__item-descr {
     @extend %reset;
-    @include font-source-sans(13px, #4e4d79, $weight-medium, null);
+    @include font-source-sans(14px, #4e4d79, $weight-medium, null);
 
     @media screen and (min-width: $tablet) {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     @media screen and (min-width: $pc) {

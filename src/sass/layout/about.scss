@@ -2,7 +2,7 @@
     background: {
         position: center top 254px;
         repeat: no-repeat;
-        size: 320px;
+        size: 320px 320px;
         image: url('../images/about/tab/bg-768-min.png');
     }
 
@@ -160,7 +160,7 @@
     border: 1px solid $border-color;
     border-radius: 10px;
     background-color: $main-white;
-    filter: $box-shadow;
+    box-shadow: $box-shadow;
 
     @media screen and (min-width: $tablet) {
         margin: 15px;
@@ -215,7 +215,7 @@
 .about__item-text {
     @extend %reset;
 
-    @include font-source-sans(14px, $benefice-color, $weight-medium, null);
+    @include font-source-sans(13px, $benefice-color, $weight-medium, null);
 
     @media screen and (min-width: $tablet) {
         font-size: 16px;
@@ -250,7 +250,7 @@
 }
 
 .about__item-subtitle {
-    font-family: 'GothamProBlack';
+    font-family: 'GothamProBold';
     @extend %reset;
     @include font-source-sans(11px, $benefice-color, null, null);
     margin-bottom: 5px;

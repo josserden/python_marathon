@@ -12,11 +12,12 @@
 
 .sphere__title {
     text-align: center;
+    font-size: 20px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 26px;
     text-transform: uppercase;
-    max-width: 280px;
+    max-width: 290px;
 
     @media screen and (min-width: $tablet) {
         max-width: 570px;
@@ -46,7 +47,7 @@
 .sphere__item {
     @extend %center;
     @include padding(12px 16px);
-    background-color: $accent-blue;
+    background-color: rgb(93, 88, 247);
 
     &:first-of-type {
         @media screen and (max-width: 767px) {
@@ -95,7 +96,7 @@
 .sphere__list-descr {
     font-family: 'GothamProBold';
     @extend %reset;
-    @include font-source-sans(12px, $main-white, $weight-black, null);
+    @include font-source-sans(13px, $main-white, $weight-black, null);
     text-transform: uppercase;
 
     @media screen and (min-width: $tablet) {
@@ -139,7 +140,7 @@
 }
 
 .sphere .btn__box-text-accent {
-    font-size: 10px;
+    font-size: 9px;
     right: 10px;
 
     @media screen and (min-width: $tablet) {

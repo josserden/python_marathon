@@ -1,11 +1,13 @@
 .flex {
     display: flex;
     flex-direction: column;
+
     border: 1px solid $border-color;
     border-radius: 5px;
+
     background-color: $main-white;
-    filter: $box-shadow;
-    @include padding(30px 0 30px 10px);
+    box-shadow: $box-shadow;
+    @include padding(30px null 30px null);
 
     @media screen and (min-width: $tablet) {
         flex-direction: row;
@@ -37,6 +39,11 @@
     }
 }
 
+.program .section__title {
+    width: 260px;
+    margin: 0 auto 20px;
+}
+
 .program {
     padding-top: 40px;
 
@@ -58,6 +65,7 @@
 
 .program__content {
     margin-bottom: 32px;
+    @include padding(null 10px null 10px);
 
     order: 3;
     @media screen and (min-width: $tablet) {
@@ -169,11 +177,12 @@
 
 .program__descr {
     @extend %reset;
-    font-family: 'GothamProLight';
     font-size: 10px;
     color: $main-white;
-    padding: 0 14px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
+    width: 220px;
 
     @media screen and (min-width: $tablet) {
         width: 340px;
@@ -190,7 +199,7 @@
 
 .program .btn__box-accent {
     order: 4;
-    margin: 0;
+    @include margin(null);
 
     @media screen and (min-width: $tablet) {
         @include position(absolute, null 0 74px null);
