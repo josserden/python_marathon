@@ -31,7 +31,7 @@
     @media screen and (min-width: $tablet) {
         @include padding(110px null 120px null);
         background: {
-            position: center -55px;
+            position: center -30px;
             size: 100% 100%;
             image: url('../images/benefice/tab/bg-768@1x-min.png');
         }
@@ -55,12 +55,35 @@
                 image: url('../images/benefice/tab/bg-768@3x-min.png');
             }
         }
+    }
 
-        // 1260
-        @media screen and (min-width: $pc) {
-            @include padding(192px null 225px null);
-            background-size: 1674px 1200px;
-            background-position: center -30px;
+    // 1260
+    @media screen and (min-width: $pc) {
+        @include padding(192px null 225px null);
+        background: {
+            image: url('../images/benefice/pc/bg-1680-min.png');
+        }
+        background-size: 1674px 1200px;
+        background-position: center -50px;
+
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (-webkit-min-device-pixel-ratio: 2),
+            screen and (-o-min-device-pixel-ratio: 2/1),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            background: {
+                image: url('../images/benefice/pc/bg-1680@2x-min.png');
+            }
+        }
+
+        @media screen and (min-device-pixel-ratio: 3),
+            screen and (-webkit-min-device-pixel-ratio: 3),
+            screen and (-o-min-device-pixel-ratio: 3/1),
+            screen and (min-resolution: 288dpi),
+            screen and (min-resolution: 3dppx) {
+            background: {
+                image: url('../images/benefice/pc/bg-1680@3x-min.png');
+            }
         }
     }
 }
@@ -121,7 +144,7 @@
     }
 
     @media screen and (min-width: $pc) {
-        @include size(168px, null);
+        @include size(170px, 170px);
     }
 }
 

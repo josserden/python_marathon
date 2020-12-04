@@ -3,7 +3,7 @@
     position: relative;
 
     &__clr {
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: $pc) {
             background-color: $accent-bg-clr;
         }
     }
