@@ -46,7 +46,7 @@
 
     // 1260px
     @media screen and (min-width: $pc) {
-        padding-bottom: 600px;
+        padding-bottom: 620px;
         background: {
             size: 100%;
         }
@@ -60,6 +60,11 @@
         @include size(658px, 96px);
         border-radius: 48px;
     }
+
+    @media screen and (min-width: $pc) {
+        @include size(734px, 112px);
+        border-radius: 56px;
+    }
 }
 
 .footer .btn-accent {
@@ -68,11 +73,20 @@
         border-radius: 49px;
         font-size: 24px;
     }
+
+    @media screen and (min-width: $pc) {
+        @include size(414px, 112px);
+        border-radius: 56px;
+    }
 }
 
 .footer .btn__box-text-accent {
     @media screen and (min-width: $tablet) {
         font-size: 20px;
         width: 238px;
+    }
+
+    @media screen and (min-width: $pc) {
+        width: 228px;
     }
 }
