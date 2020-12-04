@@ -1,1 +1,1 @@
-"use strict";
+"use strict";document.addEventListener("DOMContentLoaded",function(){var t,e=[].slice.call(document.querySelectorAll(".lazy-background"));"IntersectionObserver"in window&&(t=new IntersectionObserver(function(e,n){e.forEach(function(e){e.isIntersecting&&(e.target.classList.add("visible"),t.unobserve(e.target))})}),e.forEach(function(e){t.observe(e)}))});
