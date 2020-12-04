@@ -24,9 +24,9 @@
     }
 }
 
-@media screen and (min-width: $pc) {
-    @include padding(50px null 212px null);
-}
+// @media screen and (min-width: $pc) {
+//     @include padding(50px null 212px null);
+// }
 
 .carrier__list {
     position: relative;
