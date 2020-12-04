@@ -1,8 +1,26 @@
 .carrier {
+    position: relative;
     @include padding(null null 16px null);
 
     @media screen and (min-width: $tablet) {
         @include padding(null null 0 null);
+    }
+
+    @media screen and (min-width: $pc) {
+        padding-top: 60px;
+    }
+}
+
+.carrier::after {
+    @media screen and (min-width: $pc) {
+        content: '';
+        @include position(absolute, null null -80px 50%);
+        transform: translateX(-50%);
+        @include size($pc-wrapper, 738px);
+        z-index: 1;
+
+        background-image: url('../images/carrier/pc/bg-1680-min.svg');
+        background-repeat: no-repeat;
     }
 }
 
@@ -27,14 +45,14 @@
 }
 
 .carrier__list::after {
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) and (max-width: 1259px) {
         content: '';
-        @include position(absolute, null null -90px 50%);
+        @include position(absolute, null null -50px 50%);
         transform: translateX(-50%);
-        @include size(748px, 408px);
+        @include size($tab-wrapper, 372px);
         z-index: 1;
 
-        background-image: url('../images/carrier/pc/bg-1680-min.svg');
+        background-image: url('../images/carrier/pc/bg-768-min.svg');
         background-repeat: no-repeat;
     }
 }
