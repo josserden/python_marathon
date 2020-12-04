@@ -93,11 +93,6 @@
                 margin-bottom: 0;
             }
 
-            // &-block {
-            //     width: 225px;
-            //     height: 357px;
-            // }
-
             &-title {
                 font-size: 16px;
                 margin-bottom: 18px;
@@ -120,7 +115,7 @@
 
 @media screen and (min-width: $pc) {
     .awards {
-        padding-top: 174px;
+        padding-top: 74px;
 
         &__title {
             font-size: 60px;

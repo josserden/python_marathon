@@ -13,7 +13,7 @@
     }
 
     @media screen and (min-width: $pc) {
-        width: 620px;
+        @include size(620px, 90px);
         border-radius: 45px;
     }
 }

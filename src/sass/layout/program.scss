@@ -21,7 +21,7 @@
 
     @media screen and (min-width: $pc) {
         padding-left: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 60px;
     }
 }
 
@@ -184,6 +184,7 @@
     }
 
     @media screen and (min-width: $pc) {
+        @include size(620px, 350px);
         margin-bottom: 60px;
     }
 }

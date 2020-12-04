@@ -16,7 +16,7 @@
         content: '';
         @include position(absolute, null null -80px 50%);
         transform: translateX(-50%);
-        @include size($pc-wrapper, 738px);
+        @include size(100%, 738px);
         z-index: 1;
 
         background-image: url('../images/carrier/pc/bg-1680-min.svg');
