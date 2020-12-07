@@ -147,3 +147,15 @@
         }
     }
 }
+
+.awards__img-intro {
+    @include size(130px, null);
+
+    @media screen and (min-width: $tablet) {
+        @include size(100px, null);
+    }
+
+    @media screen and (min-width: $pc) {
+        @include size(150px, null);
+    }
+}

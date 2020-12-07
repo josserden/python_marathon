@@ -116,6 +116,7 @@
 
 .carrier__item-title {
     font-family: 'GothamProBold';
+    text-transform: uppercase;
     @extend %reset;
     @include font-source-sans(24px, $accent-blue, null, null);
     margin-bottom: 26px;

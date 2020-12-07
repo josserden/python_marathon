@@ -104,6 +104,7 @@
 }
 
 .content__title {
+    font-family: 'GothamProBold';
     @extend %reset;
     @include font-source-sans(19px, $main-blue, null, null);
     margin-bottom: 18px;

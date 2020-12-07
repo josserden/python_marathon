@@ -27,13 +27,14 @@
         rgb(2, 0, 102) 0%,
         rgb(83, 45, 172) 100%
     );
+    box-shadow: 0px 6px 14px 6px rgba(63, 34, 141, 0.6);
     border-radius: 20px;
     font-family: 'GothamProBold';
     text-transform: uppercase;
     @include font-source(10px, null);
     color: $main-white;
     z-index: 1;
-    transition: letter-spacing 0.5s ease-out;
+    transition: letter-spacing 0.5s ease-out, box-shadow 0.5s ease-out;
 
     @media screen and (min-width: $tablet) {
         @include size(278px, 70px);
@@ -74,6 +75,7 @@
     &:hover,
     &:focus {
         letter-spacing: 0.02em;
+        box-shadow: 0px 15px 81px 0px rgba(63, 34, 141, 0.3);
     }
 }
 

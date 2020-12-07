@@ -179,12 +179,12 @@
     margin-bottom: 24px;
 
     @media screen and (min-width: $tablet) {
-        @include size(370px, 200px);
+        @include size(370px, auto);
         margin-bottom: 46px;
     }
 
     @media screen and (min-width: $pc) {
-        @include size(620px, 350px);
+        @include size(620px, auto);
         margin-bottom: 60px;
     }
 }
@@ -220,11 +220,11 @@
 
 .program .btn__box-accent {
     order: 4;
-    @include margin(null);
+    @include margin(null auto null auto);
 
     @media screen and (min-width: $tablet) {
         @include position(absolute, null 0 60px null);
-        z-index: 2;
+        z-index: 3;
         width: 374px;
     }
 
